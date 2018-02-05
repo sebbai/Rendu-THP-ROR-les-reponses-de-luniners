@@ -8,7 +8,7 @@
 
 <% @users.each do |user|%>
 <p><%= user.email %></p>
-<%= link_to "Edit user", edit_user_path(user) %>
+<%= link_to "Edit user", edit_user_path(user), class: "btn btn-primary"  %>
 
 <td><%= link_to "Delete user", user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
