@@ -1,4 +1,11 @@
-<h2>Index</h2>
+
+<div class="center jumbotron">
+	<h2>Index</h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+
 <% @users.each do |user|%>
 <p><%= user.email %></p>
 <%= link_to "Edit user", edit_user_path(user) %>
