@@ -1,10 +1,14 @@
-class UsersController < ApplicationController
+class SessionsController < ApplicationController
 	def index
 		@users = User.all
 	end
 
 	def show
 		@user = User.find(params[:id])
+	end
+	
+	def log_in
+
 	end
 
 	def new 

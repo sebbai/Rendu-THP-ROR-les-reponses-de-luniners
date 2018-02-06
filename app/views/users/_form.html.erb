@@ -1,9 +1,14 @@
-<%= form_for @user do |f| %>
+<%= form_for(@user) do |f| %>
 
-<%= f.label :email %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form_control' %>
 
-<%= f.text_field :email %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form_control' %>
 
-<%= f.submit "Create", class: "btn btn-primary" %>
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form_control' %>
+
+      <%= f.submit "Update", class: "btn btn-primary" %>
 
 <% end %>
